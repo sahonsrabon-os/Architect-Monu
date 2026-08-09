@@ -1,0 +1,6 @@
+{
+  "github.copilot.llm-gateway.mcpServerUrl": "http://localhost:3100",
+  "github.copilot.llm-gateway.serverUrl": "http://localhost:9999",
+  "zombiecoder.mission-barisal.mcpServerUrl": "http://localhost:9999/mcp",
+  "zombiecoder.mission-barisal.serverUrl": "http://localhost:9999"
+}

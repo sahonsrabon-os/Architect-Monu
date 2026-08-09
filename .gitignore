@@ -1,0 +1,75 @@
+# ============================================================
+# Architect-Monu — Root .gitignore
+# Repo layout: sarver/  (Mission Barisal MCP server)
+#              murubbi kook/  (VS Code extension)
+# ============================================================
+
+# --- Secrets (NEVER commit these) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# --- Node dependencies & logs ---
+node_modules/
+jspm_packages/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# --- Build artifacts ---
+*.vsix
+out/
+out-test/
+dist/
+build/
+*.tgz
+
+# --- Server runtime data (generated per-run) ---
+sarver/cache/
+sarver/logs/
+sarver/data/
+sarver/audio/
+sarver/.missionbarisal/
+sarver/.zombiecoder/
+sarver/.note-store.lock
+
+# --- Backups ---
+*.bak
+*.bak-*
+sarver-backup-*/
+
+# --- Agent / editor local state ---
+.zombiecoder/
+.idea/
+.vtcode/
+.vscode-test/
+.claude/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Scratch notes (not part of the project) ---
+1.md
+
+# --- Logs ---
+logs
+*.log
+
+# --- TypeScript / lint caches ---
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.npm
+
+# --- Test coverage ---
+coverage
+.nyc_output
+*.lcov
+
+# --- Diagnostic reports ---
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
